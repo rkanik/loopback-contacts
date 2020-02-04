@@ -1,0 +1,29 @@
+{
+   "db": {
+      "name": "db",
+      "connector": "memory",
+      "file": "local-memory-db.json"
+   },
+   "mongo-local-ds": {
+      "host": "localhost",
+      "port": 27017,
+      "url": "mongodb://localhost:27017/lb_contacts",
+      "database": "lb_contacts",
+      "password": "",
+      "name": "mongo-local-ds",
+      "user": "",
+      "connector": "mongodb",
+      "useNewUrlParser": true,
+      "useUnifiedTopology": true
+   },
+   "mysql-local": {
+      "host": "localhost",
+      "port": 3306,
+      "url": "mysql://root:@localhost:3306/lb-contacts",
+      "database": "lb-contacts",
+      "password": "",
+      "name": "mysql-local",
+      "user": "root",
+      "connector": "mysql"
+   }
+}

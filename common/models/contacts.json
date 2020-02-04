@@ -1,0 +1,25 @@
+{
+  "name": "contacts",
+  "plural": "contacts",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "name": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "numbers": {
+      "type": "hasMany",
+      "model": "numbers",
+      "foreignKey": "contactId"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}
